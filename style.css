@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #262a2f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.container {
+	width: 400px;
+	padding: 25px 35px;
+	background-color: white;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.container .input .bi-arrow-clockwise {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #494eea;
+	color: white;
+	padding: .5rem;
+	border-radius: 0 0px 0 10px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+	z-index: 5555;
+}
+
+.container p {
+	font-weight: 600;
+	font-size: 25px;
+	margin-bottom: 8px;
+
+
+}
+
+.container input {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #494eea;
+	outline: none;
+	padding: 10px;
+	margin: 10px 0 20px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.container button {
+	width: 100%;
+	height: 50px;
+	background-color: #494eea;
+	color: white;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	margin: 20px 0;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.container button.dwonload {
+	display: none;
+}
+
+#imgBox {
+	width: 100%;
+	border-radius: 5px;
+	max-height: 100%;
+	overflow: hidden;
+	transition: 1s;
+
+}
+
+.container span {
+	font-size: 10px;
+	font-weight: 500;
+	font-family: "Dancing Script", serif;
+}
+
+#imgBox img {
+	width: 100%;
+	padding: 10px;
+	transform: scale(.8);
+}
+
+
+
+@media (max-width: 778px) {
+	.container {
+		width: 100%;
+		height: 100vh;
+		border-radius: 0;
+	}
+
+	.container .input {
+		display: grid;
+		grid-template-columns: 1fr .2fr;
+		align-items: center;
+		height: 50px;
+		gap: 1rem;
+		margin-top: 3rem;
+	}
+
+	.container .input .bi-arrow-clockwise {
+		position: static;
+		height: 50px;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+	}
+
+	.container .input input {
+		width: 100%;
+		height: 50px;
+		border: 1px solid #494eea;
+		outline: none;
+		border-radius: 5px;
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.container p {
+		font-size: 30px;
+	}
+
+	#imgBox img {
+		width: 70%;
+		padding: 0;
+		/* transform: scale(.5); */
+
+	}
+
+	#imgBox {
+		width: 100%;
+		border-radius: 5px;
+		max-height: 100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+
+	}
+
+}

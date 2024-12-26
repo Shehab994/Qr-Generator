@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Qr Generator</title>
+	<link rel="icon" href="icon/qr.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<p>Text And URL <span>(Shehab994)</span></p>
+		<div class="input">
+			<input type="text" placeholder="Text And URL" id="qrText">
+			<i class="bi bi-arrow-clockwise"></i>
+		</div>
+		<div id="imgBox">
+			<img src="" id="qrImg" alt="">
+		</div>
+		<button onclick="generateQR()" class="genaratBtn">Generate QR Code</button>
+		<button id="downloadBtn" class="dwonload"><i class="bi bi-download"></i> Dwonload</button>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
